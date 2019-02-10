@@ -120,7 +120,6 @@
         margin-bottom: 50px;
         .meta-details {
             text-align: right;
-            margin-top: 35px;
             @media(max-width: 767px) {
                 text-align: left;
             }
@@ -188,12 +187,22 @@
 }
 
 .posts-list{
+    margin-top: 100px;
+
+    .post-content {
+      background: #fff;
+    }
+
     .posts-title h3{
         @include transition();
         &:hover{
             color:$primary-color;
         }        
     }
+}
+
+.excerpt-link {
+  color: #000;
 }
 
 .blog-pagination {
